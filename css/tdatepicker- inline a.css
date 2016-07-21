@@ -1,0 +1,76 @@
+.tdatepicker-box{
+	position: absolute;
+	margin: 0;
+	padding: 2px;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	box-shadow: 0 0 8px #000;
+	font-size: 1em;
+	display: none;
+	z-index: 1000;
+}
+/* buttons */
+.tdatepicker-prev{
+	display: block;
+	text-decoration: none;
+	text-align: left;
+}
+.tdatepicker-next{
+	display: block;
+	text-decoration: none;
+	text-align: right;
+}
+
+/* day format */
+.tdatepicker-dayname{
+	display: block;
+	margin: 0;
+	padding: 2px;
+	text-align: center;
+	color: #555555;
+	background: #F3F3F3;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.tdatepicker-day{
+	display: block;
+	margin: 0;
+	padding: 2px;
+	text-decoration: none;
+	text-align: right;
+	color: #555555;
+	background: #F3F3F3;
+}
+.tdatepicker-day.currentday{
+	color: #00FFFF;
+}
+.tdatepicker-day.today{
+	color: #00FF00;
+}
+.tdatepicker-day.weekend{
+	color: #FF8800;
+}
+.tdatepicker-day.othermonth{
+	opacity: 0.6;
+}
+.tdatepicker-day:hover{
+	text-decoration: none;
+	color: #000000;
+	background: #0088FF;
+}
+
+/* Table layout */
+.tdatepicker-box table{
+	border-collapse: collapse;
+	border: none;
+	background: #FFFFFF;
+}
+.tdatepicker-box table thead{
+	border-bottom: 1px solid #CCCCCC;
+}
+.tdatepicker-box td{
+	width: 32px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #CCCCCC;
+}

@@ -1,0 +1,98 @@
+.tdatepicker-box{
+	position: absolute;
+	margin: 0;
+	padding: 2px;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	box-shadow: 0 0 8px #000;
+	font-size: 1em;
+	display: none;
+	z-index: 1000;
+	box-sizing: border-box;
+}
+/* day format */
+.tdatepicker-dayname{
+	color: #555555;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.tdatepicker-day{
+	margin: 0;
+	padding: 2px;
+	text-align: center;
+	color: #555555;
+}
+.tdatepicker-day.today{
+	color: #0088FF;
+}
+.tdatepicker-day.weekend{
+	color: #FF8800;
+}
+.tdatepicker-day.othermonth{
+	opacity: 0.8;
+}
+.tdatepicker-day.selectedday{
+	border: 1px solid #0088FF;
+}
+.tdatepicker-day:hover{
+	cursor: pointer;
+	text-decoration: none;
+	color: #000000;
+	background: #0088FF;
+}
+
+.tdatepicker-day.disabled{
+	color: #DDDDDD;
+	cursor: not-allowed;
+}
+
+/* control buttons */
+.tdatepicker-prev{
+	background: url('img/default.png') -24px 0 no-repeat;
+	cursor: pointer;
+	text-align: left;
+}
+.tdatepicker-prev:hover{
+	background: url('img/default.png') -24px -24px no-repeat;
+}
+.tdatepicker-prev.year{
+	background: url('img/default.png') 0 0 no-repeat;
+}
+.tdatepicker-prev.year:hover{
+	background: url('img/default.png') 0 -24px no-repeat;
+}
+.tdatepicker-next{
+	background: url('img/default.png') -48px 0 no-repeat;
+	cursor: pointer;
+	text-align: right;
+}
+.tdatepicker-next:hover{
+	background: url('img/default.png') -48px -24px no-repeat;
+}
+.tdatepicker-next.year{
+	background: url('img/default.png') 100% 0 no-repeat;
+}
+.tdatepicker-next.year:hover{
+	background: url('img/default.png') 100% -24px no-repeat;
+}
+
+/* Table layout */
+.tdatepicker-box table{
+	box-sizing: border-box;
+	border-collapse: separate;
+	border-spacing: 1px;
+	border: none;
+	background: #FFFFFF;
+}
+.tdatepicker-box table thead{
+	border-bottom: 1px solid #CCCCCC;
+	text-align: center;
+}
+.tdatepicker-box td{
+	box-sizing: border-box;
+	width: 32px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #FFFFFF;
+	white-space: nowrap;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Date Picker</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="javascript, html, date, time, picker" >
+	<meta name="description" content="free javascript tool date picker" >
+	<meta name="author" content="Tola Veng" >
+
+	<!-- inlcude -->
+	<link rel="stylesheet" type="text/css" href="css/tdatepicker.css">
+	<script type="text/javascript" src="js/tdatepicker.js"></script>
+	
+	<script type="text/javascript">
+		window.addEventListener('load',function(){
+			//example 1
+			tDatePicker.add('dateinput1');
+			
+			//example 2 : format
+			tDatePicker.add('dateinput2',{'format':'dd/mmm/yyyy'});
+			
+			//example 3 : min max default
+			tDatePicker.add('dateinput3',{
+				'format':'dd-mm-yyyy',
+				'startDate': new Date('2013-08-01'),
+				'defaultDate': new Date('2013-08-15'),
+				'minDate': new Date('2013-08-15'),
+				'maxDate': new Date('2013-09-15')
+			});
+			id = 'out site';
+		});
+		
+	</script>
+	
+	<style>
+		.box{
+			border: 1px solid #ff0000;
+		}
+		.today{
+			border: 1px solid #ff00ff;
+		}
+		.disabled{
+			color: #ffff00;
+		}
+	</style>
+</head>
+<body>
+	<h3>Date Picker </h3>
+	<p>
+	<strong>tDatePicker</strong> is a javascript tool to display Date dialog below the Input text.<br>
+	It is a stand alone and doesn't neeed any framework. It was developed  for learning only. Feel free to use but it may contain bugs.
+	</p>
+	<br><br><br>
+	&nbsp; Date default : <input type='text' id='dateinput1'>
+	
+	<br><br><br>
+	&nbsp; Date format: <input type='text' id='dateinput2' title='dd/mm/yyyy'>
+	
+	<br><br><br>
+	&nbsp; Date min max: <input type='text' id='dateinput3' title='dd mmmm, yyyy'>
+	<br>
+	
+</body>
+</html>
